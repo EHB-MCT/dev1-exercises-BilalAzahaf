@@ -28,6 +28,26 @@ function drawLine() {
 
    context.beginPath();
    context.lineWidth = 5;
+   context.strokeStyle = 'red';
+   context.moveTo(200, 75);
+   context.lineTo(275, 75);
+   context.lineTo(275, 125);
+   context.lineTo(200, 125);
+   context.lineTo(200, 75);
+   context.stroke();
+
+   context.beginPath();
+   context.lineWidth = 5;
+   context.strokeStyle = 'red';
+   context.moveTo(200, 175);
+   context.lineTo(325, 175);
+   context.lineTo(325, 225);
+   context.lineTo(200, 225);
+   context.lineTo(200, 175);
+   context.stroke();
+
+   context.beginPath();
+   context.lineWidth = 5;
    context.strokeStyle = 'green';
    context.moveTo(400, 50);
    context.lineTo(400, 250);
