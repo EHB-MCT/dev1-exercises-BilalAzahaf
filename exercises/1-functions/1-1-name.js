@@ -13,6 +13,7 @@ function drawLine() {
    canvas.height = window.innerHeight;
    let context = canvas.getContext("2d");
 
+   //B
    context.lineWidth = 5;
    context.strokeStyle = 'red';
    context.beginPath();
@@ -26,6 +27,7 @@ function drawLine() {
    context.lineTo(175, 50);
    context.stroke();
 
+   //B detail
    context.beginPath();
    context.lineWidth = 5;
    context.strokeStyle = 'red';
@@ -46,6 +48,7 @@ function drawLine() {
    context.lineTo(200, 175);
    context.stroke();
 
+   //I
    context.beginPath();
    context.lineWidth = 5;
    context.strokeStyle = 'green';
@@ -53,6 +56,7 @@ function drawLine() {
    context.lineTo(400, 250);
    context.stroke();
 
+   //L
    context.beginPath();
    context.lineWidth = 5;
    context.strokeStyle = 'yellow';
@@ -61,6 +65,7 @@ function drawLine() {
    context.lineTo(550, 250);
    context.stroke();
 
+   //A
    context.beginPath();
    context.lineWidth = 5;
    context.strokeStyle = 'blue';
@@ -69,6 +74,7 @@ function drawLine() {
    context.lineTo(800, 250);
    context.stroke();
 
+   //L
    context.beginPath();
    context.lineWidth = 5;
    context.strokeStyle = 'orange';
