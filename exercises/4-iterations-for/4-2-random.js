@@ -2,23 +2,27 @@
 import context from "../../scripts/context.js";
 import * as Utils from "../../scripts/utils.js";
 
-let horizontallines = 60;
-let verticallines = 30;
-
-let width = 600;
-let height = 300;
-
-context.lineWidth = 2;
-context.strokeStyle = "orange";
+let height = window.innerHeight;
+let width = window.innerWidth;
+let margin = 200;
 
 drawBubbles();
 
 function drawBubbles() {
-    for (let i = 0; i < horizontallines; i++) {
-        Utils.drawLine(0 + (10 * i), 0, width - (10 * i), height);
+
+    let bubbleLimited = 200;
+
+    context.fillRect(0, 0, width, height);
+
+    context.fillStyle = "white";
+
+    for (let i = 0; i < bubbleLimited; i++) {
+        let randomX = margin + Math.random() * width - margin * 2;
+        let randomY = margin + Math.random() * height - margin * 2;
+        let randomHue = Math.random() * 360;
+        let randomSize = 10 + Math.random() * 40;
+        context.fillStyle = Utils.hsla(randomHue, 50, 50,)
+        Utils.drawCircle(randomX, randomY, randomSize)
     }
 
-    for (let i = 0; i < verticallines; i++) {
-        Utils.drawLine(0, 0 + (10 * i), width, height - (10 * i));
-    }
 }
